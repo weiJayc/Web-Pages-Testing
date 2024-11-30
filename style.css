@@ -23,12 +23,10 @@ body {
   margin-top: 20px;
   font-size: 100px;
   color: #bababa;
+  text-decoration: none;
   transition: color 0.3s;
   cursor: pointer;
 }
-input[type="checkbox"] {
-  display: none;
-}
-input[type="checkbox"]:checked + .heart {
+.heart.active {
   color: #e74c3c;
 }
