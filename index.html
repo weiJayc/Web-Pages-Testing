@@ -8,10 +8,20 @@
   </head>
   <body>
     <div class="container">
-      <input type="checkbox" id="toggle-heart">
-      <label for="toggle-heart" class="heart">
+      <a href="#" class="heart">
         <i class="fas fa-heart"></i>
-      </label>
+      </a>
     </div>
+    <script src="script.js"></script>
   </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const heart = document.querySelector('.heart');
+    
+      heart.addEventListener('click', (event) => {
+        event.preventDefault(); // 防止預設跳轉
+        heart.classList.toggle('active');
+      });
+    });
+  </script>
 </html>
